@@ -1,2 +1,7 @@
-# demo-youdent-dario-coifman-odontologia-en-gen
-Demo web para YouDent - Dario Coifman - Odontologia en general — diseñada por eterlab.
+# YouDent - Dario Coifman - Odontologia en general
+
+Sitio web demo diseñado por [eterlab.](https://eterlab.co)
+
+## Editar
+
+Modificá `index.html` para personalizar el sitio.
