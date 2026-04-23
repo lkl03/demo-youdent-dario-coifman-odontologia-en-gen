@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>YouDent - Dario Coifman - Odontologia en general — Odontología de confianza</title>
+<meta name="description" content="YouDent - Dario Coifman - Odontologia en general — Odontología de confianza"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;border:none;cursor:pointer;background:transparent;color:inherit}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0.025;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes widen{from{width:0}to{width:100%}}
+@keyframes slideLeft{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.96)}to{opacity:1;transform:scale(1)}}
+.reveal{opacity:0;animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.reveal.d1{animation-delay:.1s}
+.reveal.d2{animation-delay:.25s}
+.reveal.d3{animation-delay:.4s}
+.reveal.d4{animation-delay:.55s}
+.reveal.d5{animation-delay:.7s}
+.scroll-reveal{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.scroll-reveal.visible{opacity:1;transform:translateY(0)}
+
+:root{--bg:#f5f9fc;--surface:#ffffff;--text:#1e3a5f;--muted:#64748b;--accent:#3b82f6;--accent-soft:rgba(59,130,246,0.1);--border:#dbeafe;--font-d:'Manrope',serif;--font-b:'Inter',sans-serif}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:16px;line-height:1.6}
+h1,h2,h3,h4{font-family:var(--font-d);font-weight:500;letter-spacing:-0.02em;line-height:1.1}
+.container{max-width:1200px;margin:0 auto;padding:0 32px;position:relative;z-index:2}
+@media(max-width:768px){.container{padding:0 20px}}
+.btn-p{display:inline-flex;align-items:center;gap:12px;padding:16px 32px;background:var(--accent);color:#fff;font-family:var(--font-b);font-weight:500;font-size:15px;letter-spacing:0.02em;border-radius:2px;transition:all .3s cubic-bezier(.2,.8,.2,1);position:relative;overflow:hidden}
+.btn-p::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,0.1);transform:translateX(-101%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.btn-p:hover::after{transform:translateX(0)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 40px #3b82f640}
+.btn-o{display:inline-flex;align-items:center;gap:12px;padding:15px 31px;background:transparent;color:var(--text);font-family:var(--font-b);font-weight:500;font-size:15px;border:1px solid var(--border);border-radius:2px;transition:all .3s}
+.btn-o:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.arr{display:inline-block;transition:transform .3s}
+.btn-p:hover .arr,.btn-o:hover .arr{transform:translateX(4px)}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(255,255,255,0.75);border-bottom:1px solid var(--border)}
+nav .in{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:1200px;margin:0 auto}
+.logo{font-family:var(--font-d);font-size:22px;font-weight:600}
+nav .cta{font-family:var(--font-b);font-size:14px;font-weight:500;padding:10px 22px;background:var(--accent);color:#fff;border-radius:2px}
+@media(max-width:768px){nav .in{padding:16px 20px}.logo{font-size:18px}nav .cta{padding:8px 16px;font-size:13px}}
+.hero{padding:80px 0 100px;overflow:hidden}
+.hero-g{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:32px}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--accent)}
+.hero h1{font-size:clamp(40px,5.5vw,72px);margin-bottom:28px;font-weight:400}
+.hero-a{font-size:18px;color:var(--muted);max-width:520px;margin-bottom:40px;line-height:1.7}
+.hero-c{display:flex;gap:16px;flex-wrap:wrap}
+.hero-v{position:relative}
+.hero-v img{width:100%;height:560px;object-fit:cover;border-radius:2px;box-shadow:0 40px 80px rgba(0,0,0,0.12)}
+.hero-v::before{content:'';position:absolute;top:-20px;right:-20px;width:140px;height:140px;border:1px solid var(--accent);border-radius:2px;z-index:-1}
+@media(max-width:968px){.hero-g{grid-template-columns:1fr;gap:48px}.hero-v img{height:400px}.hero-v::before{display:none}}
+.proof{padding:24px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(0,0,0,0.02)}
+.proof-i{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.proof-r{display:flex;align-items:center;gap:12px}
+.proof-n{font-family:var(--font-d);font-size:32px;font-weight:600;color:var(--text)}
+.stars{letter-spacing:4px;color:var(--accent);font-size:16px}
+.proof-s{width:1px;height:24px;background:var(--border)}
+section.cnt{padding:120px 0}
+.s-lbl{font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:20px;display:inline-flex;align-items:center;gap:12px}
+.s-lbl::before{content:'';width:20px;height:1px;background:var(--accent)}
+.s-t{font-size:clamp(36px,4.5vw,56px);margin-bottom:20px;max-width:800px;font-weight:400}
+.s-l{font-size:18px;color:var(--muted);max-width:600px;line-height:1.7;margin-bottom:72px}
+@media(max-width:768px){section.cnt{padding:80px 0}.s-l{margin-bottom:48px}}
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
+.svc{padding:40px 32px;border-bottom:1px solid var(--border);border-right:1px solid var(--border);transition:background .4s}
+.svc:nth-child(3n){border-right:none}
+.svc:hover{background:var(--accent-soft)}
+.svc-n{font-family:var(--font-d);font-size:13px;color:var(--muted);letter-spacing:0.1em;margin-bottom:24px}
+.svc h3{font-size:22px;margin-bottom:12px;font-weight:500}
+.svc p{color:var(--muted);font-size:15px;line-height:1.6}
+@media(max-width:968px){.svcs{grid-template-columns:repeat(2,1fr)}.svc:nth-child(3n){border-right:1px solid var(--border)}.svc:nth-child(2n){border-right:none}}
+@media(max-width:640px){.svcs{grid-template-columns:1fr}.svc{border-right:none!important}}
+.diff-s{background:rgba(0,0,0,0.02);margin-top:120px}
+.diff-g{display:grid;grid-template-columns:repeat(3,1fr);gap:64px}
+.diff-n{font-family:var(--font-d);font-size:56px;font-weight:400;color:var(--accent);margin-bottom:24px;letter-spacing:-0.04em}
+.diff h3{font-size:24px;margin-bottom:16px;font-weight:500}
+.diff p{color:var(--muted);font-size:15px;line-height:1.7}
+@media(max-width:768px){.diff-g{grid-template-columns:1fr;gap:40px}.diff-s{margin-top:80px}}
+.contact{padding:120px 0;text-align:center}
+.ct-g{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:720px;margin:56px auto 48px}
+.ct-i{padding:32px 28px;border:1px solid var(--border);text-align:left;transition:all .3s;background:var(--surface);border-radius:2px}
+.ct-i:hover{border-color:var(--accent);transform:translateY(-4px)}
+.ct-l{font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-weight:500}
+.ct-v{font-family:var(--font-d);font-size:20px;color:var(--text);font-weight:500}
+@media(max-width:640px){.ct-g{grid-template-columns:1fr}.contact{padding:80px 0}}
+footer.m{padding:80px 0 48px;border-top:1px solid var(--border);background:rgba(0,0,0,0.02)}
+footer.m .in{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto;padding:0 32px}
+footer.m .br{font-family:var(--font-d);font-size:28px;margin-bottom:12px;font-weight:500}
+footer.m .tag{color:var(--muted);font-size:14px;max-width:320px;line-height:1.6}
+footer.m .col h4{font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:500}
+footer.m .col p{font-size:14px;color:var(--text);line-height:1.7}
+@media(max-width:768px){footer.m .in{grid-template-columns:1fr;gap:32px;padding:0 20px}footer.m{padding:56px 0 32px}}
+</style></head><body>
+<nav><div class="in"><span class="logo">YouDent - Dario Coifman - Odontologia en general</span><a href="https://wa.me/5491144005803" target="_blank" rel="noopener" class="cta">Agendar</a></div></nav>
+<section class="hero"><div class="container"><div class="hero-g">
+<div>
+  <div class="eyebrow reveal">Clínica dental</div>
+  <h1 class="reveal d1">Odontología de confianza</h1>
+  <p class="hero-a reveal d2">En YouDent, el Dr. Dario Coifman se dedica a brindar atención odontológica integral y personalizada a cada paciente. Nuestro objetivo es ofrecer soluciones efectivas y duraderas para mejorar la salud bucal y la calidad de vida de nuestros pacientes en la Ciudad Autónoma de Buenos Aires.</p>
+  <div class="hero-c reveal d3">
+    <a href="https://wa.me/5491144005803" target="_blank" rel="noopener" class="btn-p">Agendar <span class="arr">→</span></a>
+    <a href="tel:01144005803" class="btn-o">Llamar <span class="arr">→</span></a>
+  </div>
+</div>
+<div class="hero-v reveal d4"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80&auto=format&fit=crop" alt="YouDent - Dario Coifman - Odontologia en general"/></div>
+</div></div></section>
+<div class="proof"><div class="container"><div class="proof-i">
+<div class="proof-r"><span class="proof-n">4.6</span><span class="stars">★★★★★</span></div>
+
+<div class="proof-s"></div><span>Ensenada 70, C1407KEB Cdad. Autónoma de Buenos Aires, Argentina</span>
+</div></div></div>
+<section class="cnt scroll-reveal"><div class="container">
+<span class="s-lbl">Servicios</span><h2 class="s-t">Lo que ofrecemos</h2>
+<p class="s-l">Servicios pensados con criterio profesional, diseñados para ofrecer resultados concretos.</p>
+</div><div class="container"><div class="svcs">
+<div class="svc scroll-reveal" style="transition-delay:0ms">
+<div class="svc-n">01 / 06</div>
+<h3>Consulta Odontológica</h3><p>Evaluación detallada del estado de salud bucal para detectar cualquier problema y recomendar el tratamiento adecuado</p>
+</div><div class="svc scroll-reveal" style="transition-delay:60ms">
+<div class="svc-n">02 / 06</div>
+<h3>Limpieza Dental Profiláctica</h3><p>Remoción de placa y sarro para prevenir enfermedades periodontales y mantener la salud de los dientes y las encías</p>
+</div><div class="svc scroll-reveal" style="transition-delay:120ms">
+<div class="svc-n">03 / 06</div>
+<h3>Restauraciones Dentales</h3><p>Reconstrucción de dientes dañados con materiales como resina o porcelana para recuperar la función y la estética</p>
+</div><div class="svc scroll-reveal" style="transition-delay:180ms">
+<div class="svc-n">04 / 06</div>
+<h3>Tratamientos de Endodoncia</h3><p>Eliminación de la pulpa dental infectada para aliviar el dolor y prevenir infecciones más graves</p>
+</div><div class="svc scroll-reveal" style="transition-delay:240ms">
+<div class="svc-n">05 / 06</div>
+<h3>Extracciones Dentales</h3><p>Remoción de dientes dañados o infectados que no pueden ser salvados para mejorar la salud bucal y el confort del paciente</p>
+</div><div class="svc scroll-reveal" style="transition-delay:300ms">
+<div class="svc-n">06 / 06</div>
+<h3>Prevención y Educación</h3><p>Asesoramiento y guía para mantener una buena higiene bucal y prevenir problemas odontológicos a largo plazo</p>
+</div>
+</div></div></section>
+<section class="cnt diff-s scroll-reveal"><div class="container">
+<span class="s-lbl">Por qué elegirnos</span><h2 class="s-t">Nuestro enfoque</h2>
+<p class="s-l">Tres principios que definen nuestro trabajo.</p>
+<div class="diff-g">
+<div class="diff scroll-reveal" style="transition-delay:0ms">
+<div class="diff-n">01</div><h3>Atención Personalizada</h3>
+<p>En YouDent, nos tomamos el tiempo para escuchar y entender las necesidades y preocupaciones de cada paciente, brindando un trato personalizado y cercano</p></div><div class="diff scroll-reveal" style="transition-delay:100ms">
+<div class="diff-n">02</div><h3>Equipo de Alta Tecnología</h3>
+<p>Contamos con equipamiento de última generación para ofrecer diagnósticos precisos y tratamientos eficaces</p></div><div class="diff scroll-reveal" style="transition-delay:200ms">
+<div class="diff-n">03</div><h3>Horarios Flexibles</h3>
+<p>Ofrecemos horarios de atención flexibles para adaptarnos a las necesidades de nuestros pacientes y minimizar el impacto en su rutina diaria</p></div>
+</div></div></section>
+<section class="contact scroll-reveal" id="contacto"><div class="container">
+<span class="s-lbl">Contacto</span>
+<h2 class="s-t" style="margin:0 auto 20px">Conversemos</h2>
+<p class="s-l" style="margin-left:auto;margin-right:auto">Estamos disponibles para responder tus consultas.</p>
+<div class="ct-g">
+<a href="tel:01144005803" class="ct-i"><div class="ct-l">Teléfono</div><div class="ct-v">01144005803</div></a>
+<a href="https://maps.google.com/?q=YouDent%20-%20Dario%20Coifman%20-%20Odontologia%20en%20general%20Ensenada%2070%2C%20C1407KEB%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina" target="_blank" rel="noopener" class="ct-i"><div class="ct-l">Dirección</div><div class="ct-v">Ensenada 70, C1407KEB Cdad. Autónoma de Buenos Aires, Argentina</div></a>
+</div>
+<a href="https://wa.me/5491144005803" target="_blank" rel="noopener" class="btn-p">Escribinos por WhatsApp <span class="arr">→</span></a>
+</div></section>
+<footer class="m"><div class="in">
+<div><div class="br">YouDent - Dario Coifman - Odontologia en general</div><p class="tag">En YouDent, el Dr. Dario Coifman se dedica a brindar atención odontológica integral y personalizada a cada paciente. Nuestro objetivo es ofrecer soluciones efectivas y duraderas para mejorar la salud bucal y la calidad de vida de nuestros pacientes en la Ciudad Autónoma de Buenos Aires.</p></div>
+<div class="col"><h4>Contacto</h4><p>01144005803</p><p>Ensenada 70, C1407KEB Cdad. Autónoma de Buenos Aires, Argentina</p></div>
+<div class="col"><h4>Rubro</h4><p>Dentista</p></div>
+</div></footer>
+<div class="eterlab-credit">
+  <div class="eterlab-credit-inner">
+    <p>©2026 | diseñado y desarrollado por <a href="https://eterlab.co/" target="_blank" rel="noreferrer">eterlab.</a></p>
+  </div>
+</div>
+<style>
+.eterlab-credit{background:#212121}
+.eterlab-credit-inner{max-width:1536px;margin:0 auto;padding:8px 16px}
+.eterlab-credit p{text-align:center;font-size:12px;color:rgba(255,255,255,0.8);font-family:'Montserrat',sans-serif;font-weight:400;margin:0;letter-spacing:0.01em}
+.eterlab-credit a{font-style:italic;color:rgba(255,255,255,0.9);transition:color .2s;text-decoration:none;font-weight:500}
+.eterlab-credit a:hover{color:#fff}
+</style><a href="https://wa.me/5491144005803" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+<style>
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:99;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(37,211,102,0.35);transition:all .3s cubic-bezier(.2,.8,.2,1)}
+.wa-float:hover{transform:scale(1.08) rotate(-5deg);box-shadow:0 20px 40px rgba(37,211,102,0.45)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+</style><script>
+(function(){
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.scroll-reveal').forEach(el => el.classList.add('visible'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.scroll-reveal').forEach(el => io.observe(el));
+})();
+</script>
+</body></html>
